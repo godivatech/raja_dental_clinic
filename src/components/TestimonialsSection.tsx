@@ -33,8 +33,8 @@ const TestimonialsSection = () => (
         viewport={{ once: true }}
         className="text-center mb-14"
       >
-        <p className="text-sm font-semibold text-primary uppercase tracking-wider mb-3">Patient Reviews</p>
-        <h2 className="text-3xl md:text-4xl font-display text-foreground mb-4">
+        <p className="text-lg font-bold text-primary uppercase tracking-widest mb-4">Patient Reviews</p>
+        <h2 className="text-4xl md:text-5xl font-display text-foreground mb-6">
           What Our Patients Say
         </h2>
       </motion.div>
@@ -47,16 +47,20 @@ const TestimonialsSection = () => (
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: i * 0.1 }}
-            className="bg-card rounded-2xl p-6 shadow-card hover:shadow-card-hover transition-all"
+            className="bg-card rounded-2xl p-8 shadow-card hover:shadow-card-hover transition-all min-h-[280px] flex flex-col justify-between"
           >
-            <Quote size={24} className="text-teal-light mb-4" />
-            <p className="text-sm text-muted-foreground leading-relaxed mb-5">{t.text}</p>
-            <div className="flex items-center gap-1 mb-2">
-              {[...Array(t.rating)].map((_, j) => (
-                <Star key={j} size={14} className="fill-warm text-warm" />
-              ))}
+            <div>
+              <Quote size={28} className="text-teal-light mb-5" />
+              <p className="text-lg text-muted-foreground leading-relaxed mb-6 font-medium italic">"{t.text}"</p>
             </div>
-            <p className="font-semibold text-sm text-foreground">{t.name}</p>
+            <div>
+              <div className="flex items-center gap-1.5 mb-3">
+                {[...Array(t.rating)].map((_, j) => (
+                  <Star key={j} size={18} className="fill-warm text-warm" />
+                ))}
+              </div>
+              <p className="font-bold text-lg text-foreground">{t.name}</p>
+            </div>
           </motion.div>
         ))}
       </div>

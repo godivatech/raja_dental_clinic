@@ -12,46 +12,46 @@ const HeroSection = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.7 }}
           >
-            <div className="inline-flex items-center gap-2 bg-teal-light text-teal-dark px-4 py-2 rounded-full text-sm font-semibold mb-6">
-              <Star size={14} className="fill-current" />
+            <div className="inline-flex items-center gap-2 bg-teal-light text-teal-dark px-5 py-2.5 rounded-full text-lg font-bold mb-8">
+              <Star size={16} className="fill-current" />
               Trusted by 200+ Happy Patients
             </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-display text-foreground leading-tight mb-6">
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-display text-foreground leading-tight mb-8">
               Your Smile,{" "}
-              <span className="text-primary">Our Priority</span>
+              <span className="text-primary italic">Our Priority</span>
             </h1>
-            <p className="text-lg text-muted-foreground mb-8 max-w-lg font-body">
+            <p className="text-xl md:text-2xl text-muted-foreground mb-10 max-w-2xl font-medium leading-relaxed">
               Experience gentle, pain-free dental care with advanced technology.
               Srivilliputhur's most trusted multi-speciality dental clinic.
             </p>
             <div className="flex flex-wrap gap-4">
               <a
                 href="tel:+919944034198"
-                className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl text-primary-foreground font-semibold shadow-cta hover:brightness-110 transition-all"
+                className="inline-flex items-center gap-3 px-8 py-4 rounded-xl text-primary-foreground text-xl font-bold shadow-cta hover:brightness-110 transition-all"
                 style={{ background: "var(--gradient-cta)" }}
               >
-                <Phone size={18} />
+                <Phone size={22} />
                 Book Appointment
               </a>
               <a
                 href="https://wa.me/919944034198?text=Hi%2C%20I%20would%20like%20to%20book%20an%20appointment"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl bg-card text-foreground font-semibold shadow-card hover:shadow-card-hover transition-all border border-border"
+                className="inline-flex items-center gap-3 px-8 py-4 rounded-xl bg-card text-foreground text-xl font-bold shadow-card hover:shadow-card-hover transition-all border border-border"
               >
-                <MessageCircle size={18} className="text-primary" />
+                <MessageCircle size={22} className="text-primary" />
                 WhatsApp Us
               </a>
             </div>
             <div className="flex items-center gap-6 mt-8">
-              <div className="flex items-center gap-1">
+              <div className="flex items-center gap-1.5">
                 {[...Array(5)].map((_, i) => (
-                  <Star key={i} size={16} className="fill-warm text-warm" />
+                  <Star key={i} size={20} className="fill-warm text-warm" />
                 ))}
-                <span className="ml-2 text-sm font-semibold text-foreground">5.0</span>
+                <span className="ml-2 text-lg font-bold text-foreground">5.0</span>
               </div>
               <div className="h-5 w-px bg-border" />
-              <span className="text-sm text-muted-foreground">Best Dentist in Srivilliputhur</span>
+              <span className="text-lg font-medium text-muted-foreground">Best Dentist in Srivilliputhur</span>
             </div>
           </motion.div>
 
@@ -76,8 +76,8 @@ const HeroSection = () => {
                   <Star size={18} className="text-primary fill-primary" />
                 </div>
                 <div>
-                  <p className="font-semibold text-sm text-foreground">5-Star Rated</p>
-                  <p className="text-xs text-muted-foreground">on Google Reviews</p>
+                  <p className="font-bold text-lg text-foreground">5-Star Rated</p>
+                  <p className="text-sm font-semibold text-muted-foreground">on Google Reviews</p>
                 </div>
               </div>
             </div>

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=DM+Serif+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -53,8 +53,8 @@
     --gradient-cta: linear-gradient(135deg, hsl(174 62% 38%) 0%, hsl(174 65% 28%) 100%);
     --gradient-accent: linear-gradient(135deg, hsl(200 70% 50%) 0%, hsl(174 62% 38%) 100%);
 
-    --font-display: 'DM Serif Display', serif;
-    --font-body: 'Plus Jakarta Sans', sans-serif;
+    --font-display: 'Poppins', sans-serif;
+    --font-body: 'Poppins', sans-serif;
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;

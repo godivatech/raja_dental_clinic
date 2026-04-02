@@ -18,11 +18,11 @@ const GallerySection = () => (
         viewport={{ once: true }}
         className="text-center mb-14"
       >
-        <p className="text-sm font-semibold text-primary uppercase tracking-wider mb-3">Our Clinic</p>
-        <h2 className="text-3xl md:text-4xl font-display text-foreground mb-4">
+        <p className="text-lg font-bold text-primary uppercase tracking-widest mb-4">Our Clinic</p>
+        <h2 className="text-4xl md:text-5xl font-display text-foreground mb-6">
           A Glimpse Inside
         </h2>
-        <p className="text-muted-foreground max-w-xl mx-auto">
+        <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed font-medium">
           Our modern, hygienic facility is equipped with the latest dental technology for your comfort and safety.
         </p>
       </motion.div>

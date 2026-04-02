@@ -43,11 +43,11 @@ const ServicesSection = () => (
         viewport={{ once: true }}
         className="text-center mb-14"
       >
-        <p className="text-sm font-semibold text-primary uppercase tracking-wider mb-3">Our Services</p>
-        <h2 className="text-3xl md:text-4xl font-display text-foreground mb-4">
+        <p className="text-lg font-bold text-primary uppercase tracking-widest mb-4">Our Services</p>
+        <h2 className="text-4xl md:text-5xl font-display text-foreground mb-6">
           Advanced Dental Treatments
         </h2>
-        <p className="text-muted-foreground max-w-xl mx-auto">
+        <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed font-medium">
           From routine care to complex procedures, we offer a full range of dental services
           using the latest technology for your comfort.
         </p>
@@ -61,13 +61,13 @@ const ServicesSection = () => (
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: i * 0.1 }}
-            className="bg-card rounded-2xl p-7 shadow-card hover:shadow-card-hover transition-all duration-300 group"
+            className="bg-card rounded-2xl p-8 shadow-card hover:shadow-card-hover transition-all duration-300 group min-h-[220px]"
           >
-            <div className="w-12 h-12 rounded-xl bg-teal-light flex items-center justify-center mb-5 group-hover:bg-primary transition-colors">
-              <service.icon size={22} className="text-primary group-hover:text-primary-foreground transition-colors" />
+            <div className="w-14 h-14 rounded-xl bg-teal-light flex items-center justify-center mb-6 group-hover:bg-primary transition-colors">
+              <service.icon size={28} className="text-primary group-hover:text-primary-foreground transition-colors" />
             </div>
-            <h3 className="font-display text-lg text-foreground mb-2">{service.title}</h3>
-            <p className="text-sm text-muted-foreground leading-relaxed">{service.desc}</p>
+            <h3 className="font-display text-2xl text-foreground mb-3">{service.title}</h3>
+            <p className="text-lg text-muted-foreground leading-relaxed font-medium">{service.desc}</p>
           </motion.div>
         ))}
       </div>

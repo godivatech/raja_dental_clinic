@@ -10,8 +10,8 @@ const ContactSection = () => (
         viewport={{ once: true }}
         className="text-center mb-14"
       >
-        <p className="text-sm font-semibold text-primary uppercase tracking-wider mb-3">Visit Us</p>
-        <h2 className="text-3xl md:text-4xl font-display text-foreground mb-4">
+        <p className="text-lg font-bold text-primary uppercase tracking-widest mb-4">Visit Us</p>
+        <h2 className="text-4xl md:text-5xl font-display text-foreground mb-6">
           Find Our Clinic
         </h2>
       </motion.div>
@@ -23,38 +23,38 @@ const ContactSection = () => (
           viewport={{ once: true }}
           className="space-y-6"
         >
-          <div className="bg-card rounded-2xl p-6 shadow-card flex items-start gap-4">
+          <div className="bg-card rounded-2xl p-8 shadow-card flex items-start gap-4">
             <div className="w-12 h-12 rounded-xl bg-teal-light flex items-center justify-center shrink-0">
               <MapPin size={22} className="text-primary" />
             </div>
             <div>
-              <h3 className="font-display text-foreground mb-1">Address</h3>
-              <p className="text-sm text-muted-foreground">
+              <h3 className="font-display text-2xl text-foreground mb-2">Address</h3>
+              <p className="text-lg text-muted-foreground leading-relaxed font-medium">
                 Near Government Hospital,<br />
                 Srivilliputhur, Tamil Nadu, India
               </p>
             </div>
           </div>
 
-          <div className="bg-card rounded-2xl p-6 shadow-card flex items-start gap-4">
+          <div className="bg-card rounded-2xl p-8 shadow-card flex items-start gap-4">
             <div className="w-12 h-12 rounded-xl bg-teal-light flex items-center justify-center shrink-0">
               <Phone size={22} className="text-primary" />
             </div>
             <div>
-              <h3 className="font-display text-foreground mb-1">Phone</h3>
-              <a href="tel:+919944034198" className="text-sm text-primary font-semibold hover:underline">
+              <h3 className="font-display text-2xl text-foreground mb-2">Phone</h3>
+              <a href="tel:+919944034198" className="text-xl text-primary font-bold hover:underline">
                 +91 99440 34198
               </a>
             </div>
           </div>
 
-          <div className="bg-card rounded-2xl p-6 shadow-card flex items-start gap-4">
+          <div className="bg-card rounded-2xl p-8 shadow-card flex items-start gap-4">
             <div className="w-12 h-12 rounded-xl bg-teal-light flex items-center justify-center shrink-0">
               <Clock size={22} className="text-primary" />
             </div>
             <div>
-              <h3 className="font-display text-foreground mb-1">Working Hours</h3>
-              <p className="text-sm text-muted-foreground">
+              <h3 className="font-display text-2xl text-foreground mb-2">Working Hours</h3>
+              <p className="text-lg text-muted-foreground leading-relaxed font-medium">
                 Mon – Sat: 9:00 AM – 8:00 PM<br />
                 Sunday: By Appointment
               </p>

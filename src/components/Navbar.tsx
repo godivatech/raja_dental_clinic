@@ -28,12 +28,14 @@ const Navbar = () => {
       }`}
     >
       <div className="container flex items-center justify-between py-4">
-        <a href="#home" className="flex items-center gap-2">
-          <div className="w-9 h-9 rounded-lg bg-primary flex items-center justify-center">
-            <span className="text-primary-foreground font-bold text-lg font-display">R</span>
-          </div>
-          <div className="leading-tight">
-            <span className="font-display text-lg text-foreground">Raja Dental</span>
+        <a href="#home" className="flex items-center gap-4">
+          <img
+            src="/assets/logo.png"
+            alt="Raja Dental Clinic Logo"
+            className="h-24 w-auto object-contain"
+          />
+          <div className="leading-tight hidden sm:block">
+            <span className="font-display text-2xl text-foreground font-bold italic tracking-tight">Raja Dental</span>
           </div>
         </a>
 
@@ -42,16 +44,16 @@ const Navbar = () => {
             <a
               key={link.href}
               href={link.href}
-              className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
+              className="text-lg font-semibold text-muted-foreground hover:text-primary transition-colors"
             >
               {link.label}
             </a>
           ))}
           <a
             href="tel:+919944034198"
-            className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-5 py-2.5 rounded-lg text-sm font-semibold shadow-cta hover:brightness-110 transition-all"
+            className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg text-lg font-bold shadow-cta hover:brightness-110 transition-all"
           >
-            <Phone size={16} />
+            <Phone size={20} />
             Call Now
           </a>
         </div>
@@ -78,16 +80,16 @@ const Navbar = () => {
                   key={link.href}
                   href={link.href}
                   onClick={() => setMobileOpen(false)}
-                  className="text-sm font-medium text-foreground py-2"
+                  className="text-xl font-bold text-foreground py-3 border-b border-border/50"
                 >
                   {link.label}
                 </a>
               ))}
               <a
                 href="tel:+919944034198"
-                className="inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground px-5 py-3 rounded-lg text-sm font-semibold"
+                className="inline-flex items-center justify-center gap-3 bg-primary text-primary-foreground px-6 py-4 rounded-lg text-xl font-bold shadow-lg mt-2"
               >
-                <Phone size={16} />
+                <Phone size={22} />
                 Call Now
               </a>
             </div>

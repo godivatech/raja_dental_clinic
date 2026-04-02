@@ -72,8 +72,8 @@ export default {
         },
       },
       fontFamily: {
-        display: ['DM Serif Display', 'serif'],
-        body: ['Plus Jakarta Sans', 'sans-serif'],
+        display: ['Poppins', 'sans-serif'],
+        body: ['Poppins', 'sans-serif'],
       },
       borderRadius: {
         lg: "var(--radius)",

@@ -18,11 +18,11 @@ const WhyChooseUs = () => (
         viewport={{ once: true }}
         className="text-center mb-14"
       >
-        <p className="text-sm font-semibold text-primary uppercase tracking-wider mb-3">Why Raja Dental?</p>
-        <h2 className="text-3xl md:text-4xl font-display text-foreground mb-4">
+        <p className="text-lg font-bold text-primary uppercase tracking-widest mb-4">Why Raja Dental?</p>
+        <h2 className="text-4xl md:text-5xl font-display text-foreground mb-6">
           Your Comfort Comes First
         </h2>
-        <p className="text-muted-foreground max-w-xl mx-auto">
+        <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed font-medium">
           We understand dental visits can feel stressful. That's why everything we do is designed
           to put you at ease — from the moment you walk in.
         </p>
@@ -38,11 +38,11 @@ const WhyChooseUs = () => (
             transition={{ delay: i * 0.08 }}
             className="text-center p-6"
           >
-            <div className="w-14 h-14 rounded-2xl bg-teal-light flex items-center justify-center mx-auto mb-4">
-              <r.icon size={24} className="text-primary" />
+            <div className="w-16 h-16 rounded-2xl bg-teal-light flex items-center justify-center mx-auto mb-6">
+              <r.icon size={28} className="text-primary" />
             </div>
-            <h3 className="font-display text-base text-foreground mb-2">{r.title}</h3>
-            <p className="text-xs text-muted-foreground leading-relaxed">{r.desc}</p>
+            <h3 className="font-display text-xl text-foreground mb-3">{r.title}</h3>
+            <p className="text-base text-muted-foreground leading-relaxed font-medium">{r.desc}</p>
           </motion.div>
         ))}
       </div>
