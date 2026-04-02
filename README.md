@@ -1,3 +1,3 @@
-# Welcome to your Lovable project
+# Raja Multi-Speciality Dental Clinic
 
 TODO: Document your project here
