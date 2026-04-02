@@ -48,9 +48,20 @@ const Footer = () => (
         </div>
       </div>
 
-      <div className="border-t border-background/10 mt-8 pt-6 text-center">
+      <div className="border-t border-background/10 mt-8 pt-6 text-center space-y-3">
         <p className="text-sm text-background/50 font-medium">
           © {new Date().getFullYear()} Raja Multi-Speciality Dental Clinic. All rights reserved.
+        </p>
+        <p className="text-sm text-background/50 font-medium">
+          Designed and Developed by{" "}
+          <a
+            href="https://godivatech.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-primary hover:underline transition-all"
+          >
+            Godiva tech
+          </a>
         </p>
       </div>
     </div>
